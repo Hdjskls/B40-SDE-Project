@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluestock Fintech Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <img src="logo with name.png" alt="Bluestock Fintech" class="logo" />
+        </div>
+        <h3>Menu</h3>
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-tasks"></i> Manage IPO</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-clipboard-list"></i> IPO Subscription</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-chart-bar"></i> IPO Allotment</a>
+          </li>
+        </ul>
+        <h3>Others</h3>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-key"></i> API Manager</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user-circle"></i> Accounts</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="content">
+        <header class="header">
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <div class="user-info">
+            <span>Hi, Rohit</span>
+            <img src="user profile.png" alt="User Profile" />
+            <i class="fas fa-chevron-down dropdown-icon"></i>
+            <i class="fas fa-bell notification-icon"></i>
+          </div>
+        </header>
+        <section class="dashboard">
+          <div class="dashboard-header">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h3>IPO Dashboard India</h3>
+              <div class="ipo-info">
+                <i class="fas fa-arrow-up up-arrow"></i>
+                <span class="gain-text"
+                  ><span class="green-number">20</span> IPO in Gain</span
+                >
+              </div>
+              <div class="chart">
+                <div class="circle loss">9 IPO in Loss</div>
+                <div class="circle total">30 Total IPO</div>
+                <div class="circle gain">20 IPO in Gain</div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Quick Links</h3>
+              <ul class="quick-links">
+                <li>
+                  <img src="nse.webp" alt="NSE India" />
+                  <span>NSE India</span>
+                  <a href="#" class="visit-now">Visit Now</a>
+                </li>
+                <li>
+                  <img src="BSE india.jpeg" alt="BSE India" />
+                  <span>BSE India</span>
+                  <a href="#" class="visit-now">Visit Now</a>
+                </li>
+                <li>
+                  <img src="SEBI.png" alt="SEBI" />
+                  <span>SEBI</span>
+                  <a href="#" class="visit-now">Visit Now</a>
+                </li>
+                <li>
+                  <img src="money control.jpeg" alt="Money Control" />
+                  <span>Money Control</span>
+                  <a href="#" class="visit-now">Visit Now</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <span>Main Board IPO</span>
+                <button class="view-report">View Report</button>
+              </div>
+
+              <p>From 01 Jan 2024</p>
+              <canvas id="ipoPieChart"></canvas>
+              <div class="legend">
+                <span><i class="circle-upcoming"></i> Upcoming</span>
+                <span><i class="circle-new-listed"></i> New Listed</span>
+                <span><i class="circle-ongoing"></i> Ongoing</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
