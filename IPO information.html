@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPO Information</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/IPO information.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 bg-light sidebar">
+          <div class="position-sticky">
+            <div class="text-center mt-3">
+              <img
+                src="logo with name.png"
+                alt="Bluestock Fintech"
+                class="img-fluid"
+              />
+            </div>
+
+            <ul class="nav flex-column mt-4">
+              <h3 class="sidebar-heading">Menu</h3>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Manage IPO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">IPO Subscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">IPO Allotment</a>
+              </li>
+              <h3 class="sidebar-heading">Others</h3>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">API Managers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+          <!-- Search Bar -->
+          <div class="search-bar mb-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." />
+              <span class="input-group-text">
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Header and Buttons -->
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Upcoming IPO Information</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <button class="btn btn-primary">Register</button>
+              <button class="btn btn-secondary ms-2">Cancel</button>
+            </div>
+          </div>
+
+          <!-- Two Columns -->
+          <div class="row">
+            <!-- First Column: List Items -->
+            <div class="col-md-4">
+              <ul class="list-group">
+                <li class="list-group-item">IPO Information</li>
+                <li class="list-group-item">IPO Info</li>
+              </ul>
+            </div>
+
+            <!-- Second Column: IPO Information -->
+            <div class="col-md-8">
+              <h2>IPO Information</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="companyLogo" class="form-label"
+                    >Company Logo</label
+                  >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="nse.webp"
+                      alt="Company Logo"
+                      class="img-thumbnail"
+                      style="width: 100px"
+                    />
+                    <div class="ms-3">
+                      <button type="button" class="btn btn-primary">
+                        Upload Logo
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="companyName" class="form-label"
+                      >Company Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="companyName"
+                      placeholder="Vodafone Idea"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="priceBand" class="form-label">Price Band</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="priceBand"
+                      placeholder="Not Issued"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="open" class="form-label">Open</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="open"
+                      placeholder="Not Issued"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="close" class="form-label">Close</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="close"
+                      placeholder="Not Issued"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="issueSize" class="form-label">Issue Size</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="issueSize"
+                      placeholder="2300 Cr."
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="issueType" class="form-label">Issue Type</label>
+                    <select class="form-select" id="issueType">
+                      <option selected>Select Type</option>
+                      <option value="1">Type 1</option>
+                      <option value="2">Type 2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="listingDate" class="form-label"
+                      >Listing Date</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="listingDate"
+                      placeholder="Not Issued"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="status" class="form-label">Status</label>
+                    <select class="form-select" id="status">
+                      <option selected>Select Status</option>
+                      <option value="1">Status 1</option>
+                      <option value="2">Status 2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <h5 class="mt-4">
+                  New Listed IPO Details (When IPO Gets Listed)
+                </h5>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="ipoPrice" class="form-label">IPO Price</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ipoPrice"
+                      placeholder="₹383"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="listingPrice" class="form-label"
+                      >Listing Price</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="listingPrice"
+                      placeholder="₹425"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="listingGain" class="form-label"
+                      >Listing Gain</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="listingGain"
+                      placeholder="13.58%"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="listingDateListed" class="form-label"
+                      >Listing Date</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="listingDateListed"
+                      placeholder="2024-05-30"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cmp" class="form-label">CMP</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cmp"
+                      placeholder="₹410"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="currentReturn" class="form-label"
+                      >Current Return</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="currentReturn"
+                      placeholder="7.05%"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="rhp" class="form-label">RHP</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="rhp"
+                      placeholder="Enter RHP PDF Link"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="drhp" class="form-label">DRHP</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="drhp"
+                      placeholder="Enter DRHP PDF Link"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

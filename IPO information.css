@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  height: 100vh;
+  padding-top: 20px;
+
+  padding: 20px;
+}
+
+.sidebar-heading {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-link.active {
+  color: #333;
+}
+
+h1.h2 {
+  font-weight: 600;
+
+  font-size: 28px;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.img-thumbnail {
+  border-radius: 50%;
+
+  border: none;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 700px;
+}
+.sidebar .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sidebar h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  padding-left: 0;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.sidebar .nav-link:hover {
+  color: #0056b3;
+}
+
+.search-bar {
+  max-width: 700px;
+}
+
+.search-bar .input-group-text {
+  background-color: white;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-bar .form-control {
+  border-right: none;
+}
+
+.search-bar .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+}
+
+.btn-toolbar .btn {
+  padding: 10px 20px;
+}
+
+.list-group-item {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.list-group-item:hover {
+  background-color: #80bdff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+button.btn {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+}
+
+input.form-control,
+select.form-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .col-md-10 {
+    padding: 15px;
+  }
+
+  h1.h2 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button.btn {
+    padding: 8px 16px;
+  }
+}
